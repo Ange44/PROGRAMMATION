@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+
+{
+    int nc;
+    float fttc,fht;
+
+    float tva=0.18;
+
+    printf("*********************BIENVENUE DANS NOTRE LOGICIEL DE FACTURE*******************\n\n\n\n");
+    printf("VEILLEZ ENTREZ LE NOMBRE DE COPIES A IMPRIMER S'IL VOUS PLAIS\n");
+
+    scanf("%d",&nc);
+
+    printf(" VEILLEZ PATIENTER SVP PROGRAMME EN COURS DE TRAITEMENT.......\n");
+
+    if(nc > 0 && nc<=10)
+
+    {
+        fht=(nc*25);
+        fttc=((fht*tva)+(fht));
+    }
+    else
+    {
+        if(nc > 10 && nc<=40)
+        {
+
+            fht=((10*25)+((nc - 10)*20));
+            fttc=((fht*tva)+(fht));
+
+        }
+        else if(nc>40)
+        {
+
+
+            fht=((10*25)+(30*20)+((nc - 40)*10));
+            fttc=((fht*tva)+(fht));
+        }
+    }
+    printf("LA FACTURE HORS TAXE EST:%f\n",fht);
+    printf("LA FACTURE TOUTE TAXE COMPRISE EST:%f",fttc);
+
+
+    return 0;
+}
+
+   

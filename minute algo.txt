@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   /* Declaration des variables */
+   int s,ns,nh,nm;
+
+/* Les entrées */
+printf("***BIENVENUE DANS NOTRE LOGICIEL DE CALCUL***\n\n\n\n");
+printf("Veillez entrer nombres de secondes\n");
+
+scanf("%d",&s);
+
+printf(" VEILLEZ PATIENTER SVP PROGRAMME EN COURS DE TRAITEMENT.......\n");
+/* Traitement */
+
+nh=(s/3600)
+nm=(ns-(nh*3600))/60
+s=(a-(m*60)-(h*3600)
+
+/* Sortie */
+printf("nombre heure,"h",nombre minute,"m",nombre de seconde,"s"\n");
+
+    return 0;
+}
